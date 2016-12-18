@@ -1,5 +1,5 @@
 window.onload = function(){
-  document.getElementById("textbox").addEventListener('keydown',function(e) {
+  document.getElementById("text-box").addEventListener('keydown',function(e) {
       if(e.keyCode === 9) { // tab was pressed
           // get caret position/selection
           var start = this.selectionStart;
@@ -7,8 +7,9 @@ window.onload = function(){
 
           var target = e.target;
           var value = target.value;
-  
+
           // set textarea value to: text before caret + tab + text after caret
+          // tab will just be FOUR spaces
           target.value = value.substring(0, start)
                       + "\t"
                       + value.substring(end);
@@ -20,5 +21,12 @@ window.onload = function(){
           e.preventDefault();
       }
   },false);
+
+  document.getElementById("copy-to-clipboard").addEventListener("click", function(){
+    var input_code = document.getElementById("text-box").value;
+    var language = document.getElementById("language-choice").value;
+    var modified_code = "``` " + language + "\n" + input_code + "\n```";
+    window.prompt("Copy to clipboard: Ctrl+C, Enter", modified_code);
+  });
 
 }

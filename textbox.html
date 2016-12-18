@@ -17,10 +17,13 @@
   </head>
   <body>
     <div><h4>Enter text here:</h4></div>
-    <div><textarea id="textbox" name="body" rows="20" cols="80" placeholder="int main() {
-
+    <div><textarea id="text-box" name="body" rows="20" cols="80" placeholder="int main() {
+      cout << 'hello world' << endl;
 }"></textarea></div>
-    <div style="float: left;"><input type="submit" value="Save"></div>
-    <div style="float: right;"><input type="submit" value="Save"></div>
+    <select id="language-choice" style="float: left;">
+      <option value="c++">C++</option>
+      <option value="python">Python</option>
+    </select>
+    <div id="copy-to-clipboard" style="float: right;"><input type="submit" value="Save"></div>
   </body>
 </html>
