@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Messenger Syntax Highlighting",
+  "description": "This extension will allow you to write a code snippet that can be copied and pasted in Facebook messenger",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "textbox.html",
+    "default_title": "CodeSnippet"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Messenger</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+    </style>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div><h4>Enter text here:</h4></div>
+    <div><textarea id="textbox" name="body" rows="20" cols="80" placeholder="int main() {
+
+}"></textarea></div>
+    <div style="float: left;"><input type="submit" value="Save"></div>
+    <div style="float: right;"><input type="submit" value="Save"></div>
+  </body>
+</html>
