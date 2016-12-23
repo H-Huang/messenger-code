@@ -25,7 +25,7 @@ window.onload = function(){
   document.getElementById("copy-to-clipboard").addEventListener("click", function(){
     var input_code = document.getElementById("text-box").value;
     var language = document.getElementById("language-choice").value;
-    var modified_code = "``` " + language + "\n" + input_code + "\n```";
+    var modified_code = "``` " + language + "\n\n\n" + input_code + "\n\n```";
     window.prompt("Copy to clipboard: Ctrl+C, Enter", modified_code);
   });
 
